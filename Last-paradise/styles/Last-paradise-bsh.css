@@ -1,0 +1,191 @@
+@import url("common.css");
+
+
+header.main-header_bsh {
+    width: 100%;
+    display: flex;
+    /*display: none;*/
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 0 1.2%;
+    position: relative;
+    z-index: 9999;
+    background: white;
+}
+
+header.main-header_bsh .main-header-menu_bsh {
+    width: 10%;
+    transition: 0.4s;
+}
+
+header.main-header_bsh .main-header-menu_bsh:hover {
+    color: #007bff;
+}
+
+header.main-header_bsh .main-header-menu_bsh .fas {
+    margin-right: 5%;
+}
+
+header.main-header_bsh .main-header-logo_bsh {
+    width: fit-content;
+    align-items: center;
+    margin-left: 4%;
+}
+
+header.main-header_bsh .main-header-gnb_bsh {
+    font-size: 1.5rem;
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: fit-content;
+}
+
+header.main-header_bsh .main-header-gnb_bsh a {
+    margin-left: 5%;
+}
+
+header.main-header_bsh .main-header-gnb_bsh .credit-card {
+    font-size: 2rem;
+}
+
+header.main-header_bsh .main-header-gnb_bsh .login_bsh {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 2% 7% 3% 7%;
+    text-align: center;
+    font-weight: 800;
+    transition: 0.4s;
+}
+
+header.main-header_bsh .main-header-gnb_bsh .login_bsh:hover {
+    border: 2px solid #007bff;
+    background: #007bff;
+    color: white;
+}
+
+header.main-header_bsh .main-header-gnb_bsh .register_bsh, .credit-card {
+    transition: 0.4s;
+}
+
+header.main-header_bsh .main-header-gnb_bsh .register_bsh:hover, .credit-card:hover {
+    color: #007bff;
+}
+
+header.main-header_bsh .main-header-gnb_bsh .pcbang {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url('https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location.svg') no-repeat center/cover;
+    transition: 0.4s ease;
+}
+
+header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
+    background: url("https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg") no-repeat center/cover;
+}
+
+/*---------- 메인헤더 끝 ----------*/
+
+.second-header_bsh {
+    width: inherit;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+    top: 0;
+    left: 0;
+    height: 6rem;
+    position: fixed;
+    z-index: 100;
+    /*background: tomato;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second-header_bsh .paradise-logo_bsh{
+    /*border: 1px solid yellow;*/
+    margin-left: 2rem;
+}
+.second-header_bsh .paradise-slogan_bsh {
+    /*border: 1px solid red;*/
+    width: 100%;
+    padding-left: 35%;
+    margin-left: 1%;
+}
+
+/*서브 네비게이션*/
+
+.second-header_bsh .snb_bsh{
+    /*border: 1px solid blue;*/
+}
+
+.second-header_bsh .snb_bsh ul {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid red;*/
+    gap: 2rem;
+    font-size: 2.5rem;
+    color: white;
+}
+/* 서브네비게이션 사이의 줄*/
+.second-header_bsh .snb_bsh ul li{
+    width: 5rem;
+    /*border: 1px solid red;*/
+}
+.second-header_bsh .snb_bsh ul li:nth-child(-n+2){
+    border-right: 1px solid rgba(100, 100, 100, 0.5);
+}
+
+
+    /*구독배너*/
+.second-header_bsh .subscribe_bsh {
+    width: 262px;
+    height: 6rem;
+    /*border: 1px solid red;*/
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/be8f510beea7dc62c17f792ce355f816c133a833/assets/teaser/image/header_button-bg.png")
+    no-repeat bottom/cover;
+    background-size: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-header_bsh .subscribe_bsh i {
+    font-size: 2.5rem;
+}
+
+.second-header_bsh .subscribe_bsh i > span {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-left: 1rem  ;
+}
+
+/*구독배너 끝*/
+
+
+.main-section_bsh {
+    height: 200vh;
+    width: 100%;
+}
+.video-container_bsh{
+    width: 100%;
+    pointer-events: none;
+   position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
