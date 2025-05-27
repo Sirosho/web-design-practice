@@ -94,12 +94,6 @@ header .gnb.on {
     left: 0;
 }
 
-main .main-content {
-    /*transition: background-image 0.3s ease-in-out;*/
-    /*background-position: center;*/
-    /*background-size: contain;*/
-}
-
 main .movie-list {
     width: 100vw;
     height: 100vh;

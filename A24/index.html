@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-
+        <!-------------- 헤더 ---------------->
         <a href="#" onclick="event.preventDefault();" class="menu-open">
             <span class="bar-icon">
             <i class="fas fa-bars"></i>
@@ -23,9 +23,8 @@
         <a href="#" class="search-open">
             <i class="fas fa-search"></i>
         </a>
-        
 
-
+        <!----- 사이드 메뉴 ----->
         <nav class="gnb">
             <a href="#" onclick="event.preventDefault();" class="close">
                 <i class="fas fa-times"></i>
@@ -42,35 +41,29 @@
         </nav>
 
     </header>
+    <!--  최신 영화 리스트  -->
     <main class="main-content">
+        <!--  최신 영화 리스트  -->
         <section class="movie-list">
             <ul class="movie">
-                <li><a href="#" data-bg="https://d135u4jtzauizi.cloudfront.net/friendshipgif1.gif">Friendship<span class="since">2025</span></a></li>
-                <li><a href="#" data-bg="https://d135u4jtzauizi.cloudfront.net/2ad833b4-3dd3-1495-58d7-df55ba94563e.gif">Bring Her Back<span class="since">2025</span></a></li>
-                <li><a href="#" data-bg="https://d135u4jtzauizi.cloudfront.net/cigarette-1.gif">Materialists<span class="since">2025</span></a></li>
-                <li><a href="#" data-bg="https://d135u4jtzauizi.cloudfront.net/_hero/121189/EDDINGTON-FIRST-LOOK.webp">Eddington<span class="since">2025</span></a></li>
-                <li><a href="#" data-bg="https://d135u4jtzauizi.cloudfront.net/TSM-1.gif">The Smashing Machine<span class="since">2025</span></a><span class="since">2025</span></li>
-                <li><a href="#" data-bg="https://d135u4jtzauizi.cloudfront.net/_hero/121944/Screenshot-2025-04-29-at-10.40.38-AM_2025-04-29-155400_xivs.webp">Overcompensating<span class="since">2025</span></a>></li>
+                <li><a href="#" data-bg="https://d135u4jtzauizi.cloudfront.net/friendshipgif1.gif">Friendship<span
+                        class="since">2025</span></a></li>
+                <li><a href="#"
+                       data-bg="https://d135u4jtzauizi.cloudfront.net/2ad833b4-3dd3-1495-58d7-df55ba94563e.gif">Bring
+                    Her Back<span class="since">2025</span></a></li>
+                <li><a href="#" data-bg="https://d135u4jtzauizi.cloudfront.net/cigarette-1.gif">Materialists<span
+                        class="since">2025</span></a></li>
+                <li><a href="#" data-bg="https://d135u4jtzauizi.cloudfront.net/_hero/121189/EDDINGTON-FIRST-LOOK.webp">Eddington<span
+                        class="since">2025</span></a></li>
+                <li><a href="#" data-bg="https://d135u4jtzauizi.cloudfront.net/TSM-1.gif">The Smashing Machine<span
+                        class="since">2025</span></a><span class="since">2025</span></li>
+                <li><a href="#"
+                       data-bg="https://d135u4jtzauizi.cloudfront.net/_hero/121944/Screenshot-2025-04-29-at-10.40.38-AM_2025-04-29-155400_xivs.webp">Overcompensating<span
+                        class="since">2025</span></a>>
+                </li>
             </ul>
         </section>
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>
@@ -91,7 +84,9 @@
     });
 
     document.addEventListener('keyup', (e) => {
-        if (e.key === 'escape') {gnb.classList.toggle('on');}
+        if (e.key === 'escape') {
+            gnb.classList.toggle('on');
+        }
     })
     const main = document.querySelector('.main-content');
     const links = document.querySelectorAll('.movie-list a');
@@ -106,12 +101,12 @@
         link.addEventListener('mouseleave', () => {
             main.style.backgroundImage = ''; // 초기화하거나 기본 이미지로 변경
         });
+        // 배경 이미지 속성 설정
         main.style.backgroundImage = `url(${bg})`;
         main.style.backgroundRepeat = 'no-repeat';
         main.style.backgroundSize = 'cover';
         main.style.backgroundPosition = 'center';
     });
-
 
 
 </script>
