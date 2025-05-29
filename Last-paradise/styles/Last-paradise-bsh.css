@@ -2,92 +2,209 @@
 
 body {
     width: 100vw;
+    padding: 0;
 }
 
-header.main-header_bsh {
-    width: 100%;
+/*백승현의 헤더               */
+/*header.main-header_bsh {*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    !*display: none;*!*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    height: 6rem;*/
+/*    padding: 0 1.2%;*/
+/*    position: relative;*/
+/*    z-index: 9999;*/
+/*    background: white;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-menu_bsh {*/
+/*    width: 10%;*/
+/*    transition: 0.4s;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-menu_bsh:hover {*/
+/*    color: #007bff;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-menu_bsh .fas {*/
+/*    margin-right: 5%;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-logo_bsh {*/
+/*    width: fit-content;*/
+/*    align-items: center;*/
+/*    margin-left: 4%;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh {*/
+/*    font-size: 1.5rem;*/
+/*    width: 15%;*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*    align-items: center;*/
+/*    height: fit-content;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh a {*/
+/*    margin-left: 5%;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh .credit-card {*/
+/*    font-size: 2rem;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh .login_bsh {*/
+/*    border: 2px solid black;*/
+/*    border-radius: 20px;*/
+/*    padding: 2% 7% 3% 7%;*/
+/*    text-align: center;*/
+/*    font-weight: 800;*/
+/*    transition: 0.4s;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh .login_bsh:hover {*/
+/*    border: 2px solid #007bff;*/
+/*    background: #007bff;*/
+/*    color: white;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh .register_bsh, .credit-card {*/
+/*    transition: 0.4s;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh .register_bsh:hover, .credit-card:hover {*/
+/*    color: #007bff;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh .pcbang {*/
+/*    width: 2.5rem;*/
+/*    height: 2.5rem;*/
+/*    background: url('https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location.svg') no-repeat center/cover;*/
+/*    transition: 0.4s ease;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {*/
+/*    background: url("https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg") no-repeat center/cover;*/
+/*}*/
+/*백승현의 헤더                    */
+button {
+    background: none;
+    border: none;
+}
+
+header.header-container {
     display: flex;
-    /*display: none;*/
     justify-content: space-between;
     align-items: center;
-    height: 6rem;
-    padding: 0 1.2%;
+    padding: 0 1%;
+    font-size: 16px;
     position: relative;
     z-index: 9999;
     background: white;
 }
 
-header.main-header_bsh .main-header-menu_bsh {
-    width: 10%;
-    transition: 0.4s;
+header.header-container .header-left {
+    font-size: 1.1em;
 }
 
-header.main-header_bsh .main-header-menu_bsh:hover {
-    color: #007bff;
+header.header-container .header-left:hover {
+    color: #0076fd;
 }
 
-header.main-header_bsh .main-header-menu_bsh .fas {
-    margin-right: 5%;
+header.header-container .header-left .header-menu-icon {
+    margin-right: 5px;
 }
 
-header.main-header_bsh .main-header-logo_bsh {
-    width: fit-content;
-    align-items: center;
-    margin-left: 4%;
+header.header-container .header-logo {
+    padding-left: 8%;
 }
 
-header.main-header_bsh .main-header-gnb_bsh {
-    font-size: 1.5rem;
-    width: 15%;
+header.header-container .header-right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: fit-content;
 }
 
-header.main-header_bsh .main-header-gnb_bsh a {
-    margin-left: 5%;
+header.header-container .header-right .hyundai-card {
+    font-size: 1em;
+    position: relative;
+    padding: 5px 10px;
+    height: 100%;
 }
 
-header.main-header_bsh .main-header-gnb_bsh .credit-card {
-    font-size: 2rem;
+header.header-container .header-right .hyundai-card .n-badge i {
+    color: #0076fd;
+    position: absolute;
+    left: 50%;
+    top: -5%
 }
 
-header.main-header_bsh .main-header-gnb_bsh .login_bsh {
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 2% 7% 3% 7%;
-    text-align: center;
-    font-weight: 800;
-    transition: 0.4s;
+header.header-container .header-right .hyundai-card .n-badge span {
+    font-size: 0.7em;
+    color: #fff;
+    position: absolute;
+    left: 62%;
+    top: 3%
 }
 
-header.main-header_bsh .main-header-gnb_bsh .login_bsh:hover {
-    border: 2px solid #007bff;
-    background: #007bff;
-    color: white;
+header.header-container .header-right .hyundai-card:hover {
+    color: #0076fd;
 }
 
-header.main-header_bsh .main-header-gnb_bsh .register_bsh, .credit-card {
-    transition: 0.4s;
+header.header-container .header-right .hidden-card-name {
+    display: none;
 }
 
-header.main-header_bsh .main-header-gnb_bsh .register_bsh:hover, .credit-card:hover {
-    color: #007bff;
+header.header-container .header-right .find-pc {
+    padding-left: 10px;
 }
 
-header.main-header_bsh .main-header-gnb_bsh .pcbang {
-    width: 2.5rem;
-    height: 2.5rem;
-    background: url('https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location.svg') no-repeat center/cover;
-    transition: 0.4s ease;
+header.header-container .header-right .find-icon a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("//rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location.svg") no-repeat;
 }
 
-header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
-    background: url("https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg") no-repeat center/cover;
+header.header-container .header-right .find-icon a:hover {
+    background: url("//rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg") no-repeat;
 }
+
+header.header-container .header-right .hidden-find-pc {
+    display: none;
+}
+
+header.header-container .header-right .join {
+    font-size: 0.9em;
+    padding: 5px 10px;
+    height: 100%;
+}
+
+header.header-container .header-right .join:hover {
+    color: #0076fd;
+}
+
+header.header-container .header-right .log-in {
+    font-size: 1em;
+    border: 2px solid #000;
+    border-radius: 15px;
+    height: 100%;
+    padding: 7px 20px;
+    font-weight: 700;
+}
+
+header.header-container .header-right .log-in:hover {
+    color: #fff;
+    border: 2px solid #0076fd;
+    background: #0076fd;
+    border-radius: 15px;
+}
+
 
 /*---------- 메인헤더 끝 ----------*/
+
 
 .second-header_bsh {
     width: inherit;
@@ -488,10 +605,12 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
 }
 
 /*게임스토리 시작*/
-.story-bgcontainer{
+.story-bgcontainer {
     position: relative;
     overflow: hidden;
 }
+
+/*스토리 배경 애니메이션*/
 .story-bgcontainer .story-img-box {
     width: 120vw;
     height: 120vh;
@@ -500,8 +619,9 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
     z-index: -1;
     top: 0;
     left: 0;
-    animation: img-rolling 40s linear infinite alternate, img-changing 40s linear infinite;
+    animation: img-rolling 40s linear infinite alternate, img-changing 30s linear infinite alternate;
 }
+
 .game-story {
     width: 100vw;
     height: 100vh;
@@ -604,6 +724,7 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
     width: 40vw;
     text-align: right;
 }
+
 /*text-rolling effect 추가*/
 @keyframes text-rolling {
     0% {
@@ -638,6 +759,7 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
     animation-delay: 20s;
 }
 
+/*배경 애니메이션 키프레임 구간*/
 @keyframes img-rolling {
     0% {
         transform: rotate(0deg) scale(1.0);
@@ -646,22 +768,227 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
         transform: rotate(10deg) scale(1.2);
     }
 }
-@keyframes img-changing{
 
-    0%{
-        background:url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_bg_01.jpg")
-        no-repeat center/cover;
+@keyframes img-changing {
+
+    0% {
+        background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_bg_01.jpg") no-repeat center/cover;
     }
 
-    50%{
-        background:url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_bg_02.jpg")
-        no-repeat center/cover;
+    40% {
+        background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_bg_02.jpg") no-repeat center/cover;
     }
-    100%{
-        background:url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_bg_03.jpg")
-        no-repeat center/cover;
+
+    100% {
+        background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_bg_03.jpg") no-repeat center/cover;
     }
 }
+
+
+/*소셜 섹션*/
+.social-section {
+
+    width: 100%;
+    height: 200vh;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/social_bg.jpg")
+    no-repeat center/cover;
+    color: white;
+}
+.social-title{
+    margin-left: 40%;
+    padding-top: 5rem;
+}
+.social-section .social-title h3{
+    font-size: 8rem;
+    font-weight: 700;
+    color: #e8e8ed;
+    /*border: 1px solid red;*/
+    padding-top: 15rem;
+    height: 30rem;
+    width: 40rem;
+    text-align: center;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/title-deco-blur.png")
+    no-repeat center/contain;
+    background-position-y: 5rem;
+}
+
+.social-section .social-title p{
+    font-size: 1.6rem;
+    color: #e9844b;
+    font-weight: 500;
+    margin-top: 3rem;
+}
+
+.social-section .social-list{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    gap: 3rem;
+}
+.social-section .social-list .social-image{
+    /*border: 1px solid red;*/
+    width: 47rem;
+    height:24rem;
+    overflow: hidden;
+}
+.social-section .social-list .social-image img{
+    object-fit: cover;
+    width: 100%;
+    transform: translateY(-13%) ;
+    transition: 0.4s ease;
+}
+.social-section .social-list .social-item{
+
+    border: 1px solid #272e31;
+    height: 47rem;
+    padding-bottom: 5%;
+    background: #1b1b1d;
+
+}
+.social-section .social-list .social-item .item-top{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1b1b1d;
+    font-size: 1.6rem;
+    color: #8d8e93;
+    font-weight: 700;
+    cursor: pointer;
+}
+.youtube-sub{
+    margin-left:32%;
+    margin-right: 3%;
+}
+.item-bottom-a{
+    /*border: 1px solid red;*/
+    width: 95%;
+    height: 3rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-left: 2.5%;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.item-bottom-a a{
+    display: block;
+    /*border: 1px solid red;*/
+    padding: 5rem 0;
+    background: #272e31;
+}
+.date{
+    /*border: 1px solid red;*/
+    text-align: center;
+    margin-top: 10rem;
+    color: #96979c;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.social-section .social-list .social-item:hover .social-image img{
+    transform: scale(1.05) translateY(-13%);
+}
+
+.social-section .social-list .social-item:hover .item-bottom-a{
+    color: #e9844b;
+    text-decoration: underline;
+    transition: 0.4s ease;
+}
+/*SNS 링크 버튼*/
+.social-section .social-link{
+    /*border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7rem;
+    gap: 3rem;
+}
+.social-section .social-link .official-sns{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e9844b;
+}
+.social-section .social-link .social-icons-link{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.social-section .social-link .social-icons-link .fa-youtube{
+    font-size: 2.8rem;
+    margin-left: 1rem;
+    margin-top: 1.1rem;
+}
+.social-section .social-link .social-icons-link .fa-instagram{
+    font-size: 3rem;
+    margin-left: 1.2rem;
+    margin-top: 1.1rem;
+}
+.social-section .social-link .social-icons-link .fa-discord{
+    font-size: 2.8rem;
+    margin-left: 1.3rem;
+    margin-top: 1.2rem;
+}
+.social-section .social-link .social-icons-link a{
+    /*border: 1px solid red;*/
+    width: 5rem;
+    height: 5rem;
+    background:url("/src/social-bg_bsh.png");
+    transition: 0.4s;
+}
+.social-section .social-link .social-icons-link a:hover{
+    background:url("/src/social-bg-hover_bsh.png");
+    color:#e9844b;
+}
+/*TOP 버튼*/
+.top-button{
+    width: 6rem;
+    height: 6rem;
+    margin-left: 48.5%;
+    margin-top: 7rem;
+}
+.top-button a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background:url("/src/top_bsh.png");
+    transition: 0.4s;
+}
+.top-button a:hover{
+    background: url("/src/top-hover_bsh.png");
+}
+
+/*FOOTER*/
+footer{
+    height: 40vh;
+    background: #000;
+    padding: 0 20rem;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e8e8e8;
+}
+.footer-flex .left-ele{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly ;
+    margin-left: 20rem;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 5rem;
+}
+
+
+
+
+
+
+
+
 
 
 
