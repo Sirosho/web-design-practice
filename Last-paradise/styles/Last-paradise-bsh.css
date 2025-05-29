@@ -257,7 +257,8 @@ header.header-container .header-right .log-in:hover {
     width: 262px;
     height: 6rem;
     background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/be8f510beea7dc62c17f792ce355f816c133a833/assets/teaser/image/header_button-bg.png") no-repeat bottom/cover;
-    background-size: 110%;
+    background-size: 140%;
+    background-position-y:100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -790,15 +791,16 @@ header.header-container .header-right .log-in:hover {
 
     width: 100%;
     height: 200vh;
-    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/social_bg.jpg")
-    no-repeat center/cover;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/social_bg.jpg") no-repeat center/cover;
     color: white;
 }
-.social-title{
+
+.social-title {
     margin-left: 40%;
     padding-top: 5rem;
 }
-.social-section .social-title h3{
+
+.social-section .social-title h3 {
     font-size: 8rem;
     font-weight: 700;
     color: #e8e8ed;
@@ -807,38 +809,40 @@ header.header-container .header-right .log-in:hover {
     height: 30rem;
     width: 40rem;
     text-align: center;
-    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/title-deco-blur.png")
-    no-repeat center/contain;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/title-deco-blur.png") no-repeat center/contain;
     background-position-y: 5rem;
 }
 
-.social-section .social-title p{
+.social-section .social-title p {
     font-size: 1.6rem;
     color: #e9844b;
     font-weight: 500;
     margin-top: 3rem;
 }
 
-.social-section .social-list{
+.social-section .social-list {
 
     display: flex;
     justify-content: center;
     margin-top: 10rem;
     gap: 3rem;
 }
-.social-section .social-list .social-image{
+
+.social-section .social-list .social-image {
     /*border: 1px solid red;*/
     width: 47rem;
-    height:24rem;
+    height: 24rem;
     overflow: hidden;
 }
-.social-section .social-list .social-image img{
+
+.social-section .social-list .social-image img {
     object-fit: cover;
     width: 100%;
-    transform: translateY(-13%) ;
+    transform: translateY(-13%);
     transition: 0.4s ease;
 }
-.social-section .social-list .social-item{
+
+.social-section .social-list .social-item {
 
     border: 1px solid #272e31;
     height: 47rem;
@@ -846,7 +850,8 @@ header.header-container .header-right .log-in:hover {
     background: #1b1b1d;
 
 }
-.social-section .social-list .social-item .item-top{
+
+.social-section .social-list .social-item .item-top {
     width: 100%;
     height: 15%;
     display: flex;
@@ -858,11 +863,13 @@ header.header-container .header-right .log-in:hover {
     font-weight: 700;
     cursor: pointer;
 }
-.youtube-sub{
-    margin-left:32%;
+
+.youtube-sub {
+    margin-left: 32%;
     margin-right: 3%;
 }
-.item-bottom-a{
+
+.item-bottom-a {
     /*border: 1px solid red;*/
     width: 95%;
     height: 3rem;
@@ -872,13 +879,15 @@ header.header-container .header-right .log-in:hover {
     font-size: 1.6rem;
     font-weight: 600;
 }
-.item-bottom-a a{
+
+.item-bottom-a a {
     display: block;
     /*border: 1px solid red;*/
     padding: 5rem 0;
     background: #272e31;
 }
-.date{
+
+.date {
     /*border: 1px solid red;*/
     text-align: center;
     margin-top: 10rem;
@@ -886,17 +895,19 @@ header.header-container .header-right .log-in:hover {
     font-size: 1.6rem;
     font-weight: 600;
 }
-.social-section .social-list .social-item:hover .social-image img{
+
+.social-section .social-list .social-item:hover .social-image img {
     transform: scale(1.05) translateY(-13%);
 }
 
-.social-section .social-list .social-item:hover .item-bottom-a{
+.social-section .social-list .social-item:hover .item-bottom-a {
     color: #e9844b;
     text-decoration: underline;
     transition: 0.4s ease;
 }
+
 /*SNS 링크 버튼*/
-.social-section .social-link{
+.social-section .social-link {
     /*border: 1px solid red;*/
     display: flex;
     align-items: center;
@@ -905,90 +916,186 @@ header.header-container .header-right .log-in:hover {
     margin-top: 7rem;
     gap: 3rem;
 }
-.social-section .social-link .official-sns{
+
+.social-section .social-link .official-sns {
     font-size: 1.8rem;
     font-weight: 700;
     color: #e9844b;
 }
-.social-section .social-link .social-icons-link{
-   display: flex;
+
+.social-section .social-link .social-icons-link {
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
 }
-.social-section .social-link .social-icons-link .fa-youtube{
+
+.social-section .social-link .social-icons-link .fa-youtube {
     font-size: 2.8rem;
     margin-left: 1rem;
     margin-top: 1.1rem;
 }
-.social-section .social-link .social-icons-link .fa-instagram{
+
+.social-section .social-link .social-icons-link .fa-instagram {
     font-size: 3rem;
     margin-left: 1.2rem;
     margin-top: 1.1rem;
 }
-.social-section .social-link .social-icons-link .fa-discord{
+
+.social-section .social-link .social-icons-link .fa-discord {
     font-size: 2.8rem;
     margin-left: 1.3rem;
     margin-top: 1.2rem;
 }
-.social-section .social-link .social-icons-link a{
+
+.social-section .social-link .social-icons-link a {
     /*border: 1px solid red;*/
     width: 5rem;
     height: 5rem;
-    background:url("/src/social-bg_bsh.png");
+    background: url("/src/social-bg_bsh.png");
     transition: 0.4s;
 }
-.social-section .social-link .social-icons-link a:hover{
-    background:url("/src/social-bg-hover_bsh.png");
-    color:#e9844b;
+
+.social-section .social-link .social-icons-link a:hover {
+    background: url("/src/social-bg-hover_bsh.png");
+    color: #e9844b;
 }
+
 /*TOP 버튼*/
-.top-button{
+.top-button {
     width: 6rem;
     height: 6rem;
     margin-left: 48.5%;
     margin-top: 7rem;
 }
-.top-button a{
+
+.top-button a {
     width: 100%;
     height: 100%;
     display: block;
-    background:url("/src/top_bsh.png");
+    background: url("/src/top_bsh.png");
     transition: 0.4s;
 }
-.top-button a:hover{
+
+.top-button a:hover {
     background: url("/src/top-hover_bsh.png");
 }
 
+/*우측 디코티비 */
+.right-sidebar {
+    position: fixed;
+    right: 3%;
+    width: fit-content;
+    top: 80%;
+    z-index: 900;
+}
+.right-sidebar .right-new{
+    width: 100%;
+    text-align: center;
+    color: #e24757;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*FOOTER*/
-footer{
+footer {
     height: 40vh;
     background: #000;
     padding: 0 20rem;
 }
-.footer-flex{
+
+.footer-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #e8e8e8;
 }
-.footer-flex .left-ele{
+
+.footer-flex .left-ele {
     display: flex;
     align-items: center;
-    justify-content: space-evenly ;
-    margin-left: 20rem;
+    justify-content: space-evenly;
+    margin-left: 17rem;
     font-size: 14px;
-    font-weight: 500;
-    gap: 5rem;
+    font-weight: 600;
+    margin-top: 4rem;
+    color: #96979c;
+}
+
+.footer-flex .left-ele a {
+    border-right: 1px solid rgba(100, 100, 100, 0.5);
+    padding: 0 3rem;
+}
+.footer-flex .left-ele li:nth-child(4)>a{
+    border-right: none;
 }
 
 
 
+.footer-flex .left-ele .personal-info {
+    color: white;
+}
 
+.footer-flex .left-ele a:hover {
+    text-decoration: underline;
+}
 
+.footer-flex .right-ele {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 18rem;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 4rem;
+    color: #96979c;
+    gap: 3rem;
 
+}
 
+.footer-flex .right-ele span {
+    border-right: 1px solid rgba(100, 100, 100, 0.5);
+    padding: 0 3rem;
+}
+.footer-flex .right-ele select{
+    border: 2px #96979c solid;
+    width: 13rem;
+    height: 3.2rem;
+    background: #000;
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+.copyright{
+    color: #96979c;
+    font-size: 12px;
+    font-weight: 600;
+    border-top: 1px rgba(100, 100, 100, 0.5) solid;
+    border-bottom: 1px rgba(100, 100, 100, 0.5) solid;
+    margin-top: 8rem;
+    padding: 2.7rem 0;
+}
 
+.footer-nexon{
+    /*border: 1px solid red;*/
+    width: fit-content;
+    position: relative;
+    top: 7rem;
+    left: 0;
+}
 
 
 
